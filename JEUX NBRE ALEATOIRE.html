@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // var variable1=prompt('donner la  premiere variable');
+        // var variable2= prompt('donner la  deuxieme variable');
+        // var somme=   parseInt(variable1) + parseInt (variable2) ;
+
+        // alert(somme);
+                            var max=100;
+                            var min =1;
+                            window.confirm("BENVENUE AU  NIVEAU 1");
+                            var nom=prompt("Donnez votre  nom");
+                            var nombrealeatoire=Math.floor(Math.random()*(max-min+1)+min);
+                            var trouve=false;
+                            for (var i=1; i<=5; i++){
+                                console.log(nombrealeatoire);
+                                var nombresaisi= prompt("veillez saisir un nombre compris entre 1 et 100");
+                                        if(nombresaisi < nombrealeatoire){
+                                            console.log(nombresaisi+"est petit");
+                                            //   break;
+                                        }else if(nombresaisi > nombrealeatoire){
+                                        console.log(nombresaisi+"est grand");
+                                        //   break;
+                                        }else if(nombresaisi==nombrealeatoire){
+                                        
+                                                trouve=true; 
+                                                break;
+                                        }
+                            }
+                            
+                            if(trouve){
+                                console.log("BRAVO! "+nom+ " vous avez reussi apres "+i+" tentative");
+                                  window.confirm("passer au niveau suivant");
+                                    NIVEAU2();
+                                      }else{
+                                                console.log("vous aves echoué");
+                                            }
+                   
+                            
+                        //    NIVEAU1();
+                
+                
+                 
+         function NIVEAU2(){
+                     var max=500;
+                     var min =101;
+                     window.confirm("BENVENUE AU  NIVEAU 2");
+                     var nom=prompt('Donnez votre  nom');
+                     var nombrealeatoire=Math.floor(Math.random()*(max-min+1)+min);
+                     var trouve=false;
+                        for (var i=1; i<=5; i++){
+                             console.log(nombrealeatoire);
+                             var nombresaisi= prompt("veillez  saisir un nombre compris entre 101 et 500");
+                                if(nombresaisi < nombrealeatoire){
+                                    console.log(nombresaisi+"est petit");
+                                    // break;
+                                }else if(nombresaisi > nombrealeatoire){
+                                console.log(nombresaisi+" est grand");
+                                //   break;
+                                }else if(nombresaisi==nombrealeatoire){
+                                
+                                trouve=true;
+                                break;
+                                
+                                }   
+                        }
+                        
+                        if(trouve){
+                             console.log("BRAVO! "+nom+ " vous avez reussi apres "+i+" tentative");
+                              window.confirm("passer au niveau 3");
+                                NIVEAU3();
+                            
+                        }else{
+                            console.log("vous aves echoué");
+                        }
+                        
+             }
+
+
+          function NIVEAU3(){
+
+                        var max=1000;
+                        var min =501;
+                        window.confirm("BENVENUE AU  NIVEAU 3");
+                        var nom=prompt('Donnez votre  nom');
+                        var nombrealeatoire=Math.floor(Math.random()*(max-min+1)+min);
+                        var trouve=false;
+                            for (var i=1; i<=5; i++){
+                                console.log(nombrealeatoire);
+                                var nombresaisi= prompt("veillez  saisir un nombre compris entre 501 et 1000");
+                                    if(nombresaisi < nombrealeatoire){
+                                        console.log(nombresaisi+" est petit");
+                                        //   break;
+                                    }else if(nombresaisi > nombrealeatoire){
+                                    console.log(nombresaisi+" est grand");
+                                    //    break;
+                                    }else if(nombresaisi==nombrealeatoire){
+                                    
+                                    trouve=true;
+                                    break;
+                                    
+                                    }
+
+                            }
+                            
+                            if(trouve){
+                                console.log("BRAVO! "+nom+ " vous avez reussi apres "+i+" tentative");
+                                // break;
+                                
+                            }else{
+                                console.log("vous aves echoué");
+                                // break;
+                            }
+                    }
+
+
+    </script>
+</body>
+</html>
